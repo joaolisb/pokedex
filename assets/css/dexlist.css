@@ -1,0 +1,117 @@
+.content {
+    padding: 1rem;
+    width: 400px;
+    left: 0;
+    height: 100%;
+    background-color: #dddddd;
+    overflow-y: scroll;
+    top: 0;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.poke-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.pokemon{
+    margin: .5rem;
+    padding: 1rem;
+    color: #333333;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.pokemon .number {
+    text-align: right;
+    opacity: .5;
+    font-size: .7rem;
+}
+
+.pokemon .name {
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type {
+    color: #ffffff;
+    padding: .25rem .5rem;
+    font-size: .7rem;
+    margin: .2rem 0;
+    border-radius: 1rem;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 80px;
+    filter: drop-shadow(.15rem .15rem 0 #333333)
+}
+
+.pokemon:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.paginacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+} 
+
+.paginacao button {
+    background-color: #263238;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: .5rem .9rem;
+    font-size: 1.5rem;
+}
+
+.paginacao button:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+    color: #aaaaaa;
+}
+
+
+
+.mainTypeNormal { background-color: #A8A878; }
+.mainTypeFire { background-color: #F08030; }
+.mainTypeFighting { background-color: #C03028; }
+.mainTypeWater { background-color: #6890F0; }
+.mainTypeFlying { background-color: #A890F0; }
+.mainTypeGrass { background-color: #78C850; }
+.mainTypePoison { background-color: #A040A0; }
+.mainTypeElectric { background-color: #F8D030; }
+.mainTypeGround { background-color: #E0C068; }
+.mainTypePsychic { background-color: #F85888; }
+.mainTypeRock { background-color: #B8A038; }
+.mainTypeIce { background-color: #98D8D8; }
+.mainTypeBug { background-color: #A8B820; }
+.mainTypeDragon { background-color: #7038F8; }
+.mainTypeGhost { background-color: #705898; }
+.mainTypeDark { background-color: #705848; }
+.mainTypeSteel { background-color: #B8B8D0; }
+.mainTypeFairy { background-color: #EE99AC; }

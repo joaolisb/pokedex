@@ -1,0 +1,157 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6a6a6a;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../../resources/pokeBG.png);
+    color: #333333;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.main-page {
+    width: 1120px;
+    height: 100%;
+    background-color: #ffffff;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    padding: 1.5rem;
+}
+
+.species-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.species-data h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.species-data img {
+    align-self: center;
+}
+
+.pokedex-data h2 {
+    margin-bottom: 3rem;
+}
+
+.breeding-data h2 {
+    margin-bottom: 3rem;
+}
+
+.stat-list {
+    list-style-type: none;
+
+}
+
+.stat-bar {
+    width: 80%;
+    display: inline-block;
+    background-color: #445E9C;
+}
+
+.reg-table {
+    width: 90%;
+    font-size: 1rem;
+    margin: auto;
+    font-weight: 300;
+    border-collapse: collapse;
+}
+
+.reg-table td {
+    padding: .8rem;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    width: 50%;
+}
+
+.reg-table .td-left {
+    font-weight: 500;
+    text-align: right;
+}
+
+.reg-table .td-right {
+    text-align: left;
+}
+
+.type-onDex {
+    color: #ffffff;
+    font-size: .9rem;
+    padding: .2rem .4rem;
+    border-radius: .25rem;
+}
+
+.stat-table {
+    width: 90%;
+    font-size: 1rem;
+    margin: auto;
+    font-weight: 300;
+    border-collapse: collapse;
+}
+
+.stat-table td {
+    padding: 0.2rem;
+}
+
+.stat-table .td-left {
+    width: 15%;
+    text-align: center;
+}
+
+.td-title {
+    text-align: left !important;
+    font-weight: 500;
+}
+
+.back-progress {
+    background-color: #cccccc;
+    padding: 0;
+    border-radius: 3rem;
+}
+
+.progress {
+    margin: 0;
+    user-select: none;
+    border-radius: 3rem;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+    
+.species-data { grid-area: 1 / 1 / 6 / 2;}
+.pokedex-data { grid-area: 6 / 1 / 10 / 2;}
+.breeding-data { grid-area: 1 / 2 / 4 / 3;}
+.stats-data { grid-area: 4 / 2 / 8 / 3;}
+.evolution-data { grid-area: 8 / 2 / 10 / 3;}
+
+
+.typeNormal { background-color: #C6C6A7; border: .1rem solid #6D6D4E; }
+.typeFire { background-color: #ff9c54; border: .1rem solid #9C531F; }
+.typeFighting { background-color: #cf3e69; border: .1rem solid #7D1F1A; }
+.typeWater { background-color: #4d90d5; border: .1rem solid #445E9C; }
+.typeFlying { background-color: #8fa8dd; border: .1rem solid #6D5E9C; }
+.typeGrass { background-color: #63bb5b; border: .1rem solid #4E8234; }
+.typePoison { background-color: #ab6ac8; border: .1rem solid #682A68; }
+.typeElectric { background-color: #f3d23b; border: .1rem solid #A1871F; }
+.typeGround { background-color: #a5733c; border: .1rem solid #927D44; }
+.typePsychic { background-color: #ea6c8d; border: .1rem solid #A13959; }
+.typeRock { background-color: #c7b78b; border: .1rem solid #786824; }
+.typeIce { background-color: #47c9c9; border: .1rem solid #638D8D; }
+.typeBug { background-color: #a0a028; border: .1rem solid #6D7815; }
+.typeDragon { background-color: #576fbd; border: .1rem solid #4924A1; }
+.typeGhost { background-color: #6f4570; border: .1rem solid #493963; }
+.typeDark { background-color: #4f4747; border: .1rem solid #49392F; }
+.typeSteel { background-color: #5a8ea1; border: .1rem solid #787887; }
+.typeFairy { background-color: #e28de2; border: .1rem solid #9B6470; }

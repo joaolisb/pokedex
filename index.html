@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokédex</title>
+    <meta name="description" content="Projeto de Pokédex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/dexlist.css">
+    <!--<link rel="stylesheet" href="./assets/css/mediaq.css">-->
+
+    <!--Normalize:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Font: Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-page" id="dexPage">
+        <div class="species-data">
+            <h1>Bulbasaur</h1>
+            <img src="https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png"
+                width="70%">
+        </div>
+        <div class="pokedex-data">
+            <h2>Pokédex data</h2>
+            <table class="reg-table">
+                <tbody>
+                    <tr>
+                        <td class="td-left">Species</td>
+                        <td class="td-right" id="replace-genus">Seed Pokémon</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Dex Number</td>
+                        <td class="td-right">#001</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Type</td>
+                        <td class="td-right"><span class="type-onDex typegrass">Grass</span> <span class="type-onDex typepoison">Poison</span></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Height</td>
+                        <td class="td-right">0.7m</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Weight</td>
+                        <td class="td-right">6.9kg</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Abilities</td>
+                        <td class="td-right">Overgrow / Chlorophyll</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="breeding-data">
+            <h2>Breeding</h2>
+            <table class="reg-table" id="replace-breeding">
+                <tbody>
+                    <tr>
+                        <td class="td-left">Gender ratio</td>
+                        <td class="td-right"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Egg group</td>
+                        <td class="td-right">Field / Monster</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left">Egg cycles</td>
+                        <td class="td-right">20 (4,884 - 5,140 steps)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stats-data">
+            <h2>Base stats</h2>
+            <table class="stat-table">
+                <!--HP====================================-->
+                <tr>
+                    <td class="td-left td-title">HP</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">45</td>
+                    <td class="back-progress" style="background-color: #ffa3a3;"><div class="progress" style="background-color: #ff0000; color: #ff0000; width: calc(100% * 45/255);">45</div></td>
+                </tr>
+                <!--Attack====================================-->
+                <tr>
+                    <td class="td-left td-title">Attack</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">49</td>
+                    <td class="back-progress" style="background-color: #ffcda9;"><div class="progress" style="background-color: #f08030; color: #f08030; width: calc(100% * 49/255);">49</div></td>
+                </tr>
+                <!--Defense====================================-->
+                <tr>
+                    <td class="td-left td-title">Defense</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">49</td>
+                    <td class="back-progress" style="background-color: #fff2c0;"><div class="progress" style="background-color: #f8d030; color: #f8d030; width: calc(100% * 49/255);">49</div></td>
+                </tr>
+                <!--Sp. Atk====================================-->
+                <tr>
+                    <td class="td-left td-title">Sp. Atk</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">65</td>
+                    <td class="back-progress" style="background-color: #ccdbff;"><div class="progress" style="background-color: #6890f0; color: #6890f0; width: calc(100% * 65/255);">65</div></td>
+                </tr>
+                <!--Sp. Def====================================-->
+                <tr>
+                    <td class="td-left td-title">Sp. Def</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">65</td>
+                    <td class="back-progress" style="background-color: #d5ffc0;"><div class="progress" style="background-color: #78c850; color: #78c850; width: calc(100% * 65/255);">65</div></td>
+                </tr>
+                <!--Speed====================================-->
+                <tr>
+                    <td class="td-left td-title">Speed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="td-left">45</td>
+                    <td class="back-progress" style="background-color: #ffc7d7;"><div class="progress" style="background-color: #f85888; color: #f85888; width: calc(100% * 45/255);">45</div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="evolution-data">
+            <!--Coming soon!-->
+        </div>
+    </div>
+    <section class="content">
+        <h2>Pokédex List</h2>
+        <ol id="list-poke" class="poke-list">
+
+        </ol>
+        <div class="paginacao">
+            <button id="loadMore" type="button">+</button>
+        </div>
+    </section>
+
+        <script src="./assets/js/species.js"></script>
+        <script src="./assets/js/pokeAPI.js"></script>
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
