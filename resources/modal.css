@@ -1,0 +1,292 @@
+#modal-bg {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(77, 77, 77, 0.5);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	/*flex*/
+}
+
+#close-btn, #close-btn2 {
+	border: none;
+	font-size: 1.5rem;
+	position: absolute;
+	z-index: 10;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	opacity: 0.5;
+	background-color: rgba(0,0,0,0);
+}
+
+#close-btn:before,
+#close-btn:after, #close-btn2:before,
+#close-btn2:after {
+	position: absolute;
+	top: 4px;
+	right: 13px;
+	content: '';
+	height: 20px;
+	width: 2px;
+	background-color: #333;
+}
+
+#close-btn:before, #close-btn2:before {
+	transform: rotate(45deg);
+}
+
+#close-btn:after, #close-btn2:after {
+	transform: rotate(-45deg);
+}
+
+#close-btn:hover, #close-btn2:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#about {
+	background-color: #f0f0f0;
+	position: absolute;
+	margin: auto;
+	padding: 20px 40px 30px 40px;
+	width: 500px;
+	min-height: 500px;
+	border-radius: 20px;
+	line-height: 1.5rem;
+	display: none;
+	animation: key1 0.5s ease-in-out;
+	z-index: 10;
+}
+
+#about h1 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.txt-bold {
+	font-weight: bold;
+}
+
+.txt-small {
+	padding-top: 30px;
+	font-size: .7rem;
+	line-height: 1rem;
+}
+
+.dont-capitalize {
+	text-transform: lowercase;
+}
+
+#modal-close {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	cursor: pointer;
+}
+
+#entry-bg {
+	background-color: #eeeeee;
+	width: 710px;
+	border-radius: 16px;
+	display: none;
+	animation: key2 0.5s ease-in-out;
+}
+
+#dex-entry {
+	width: 100%;
+	height: 510px;
+	background-size: 25% 100%;
+	border-radius: 16px;
+	display: grid;
+	grid-template-columns: 260px 450px;
+	align-items: center;
+	font-size: .9rem;
+	text-transform: capitalize;
+	position: relative;
+}
+
+#poke-cry {
+	position: absolute;
+	background-color: rgba(240,240,240,0.5);
+	bottom: 20px;
+	left: 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	border: 2px outset #333333;
+	color: #121212;
+	font-size: 1.2em;
+	filter: brightness(100%);
+}
+
+#poke-cry:hover {
+	cursor: pointer;
+	filter: brightness(130%);
+}
+
+.picture-day {
+	filter: drop-shadow(1px 0 0 #000000) drop-shadow(-1px 0 #000000) drop-shadow(0 1px 0 #000000) drop-shadow(0 -1px 0 #000000) drop-shadow(1px 1px 0 #000000) drop-shadow(1px -1px 0 #000000) drop-shadow(-1px 1px 0 #000000) drop-shadow(-1px -1px 0 #000000);
+	width: 210px;
+	place-self: center;
+}
+
+.no-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 40px;
+}
+
+.entry-types li {
+	display: inline;
+	margin-right: 10px;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.abilities li {
+	display: inline;
+	margin-right: 30px;
+}
+
+.stats-table,
+.specs-table {
+	width: 390px;
+}
+
+.stat-bar {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+.stats-table tr td:nth-child(1) {
+	width: 25%;
+}
+
+.stat-line {
+	height: 7px;
+	margin-left: 3px;
+	border-radius: 20px;
+}
+
+.stats-table tr td:nth-child(3) {
+	width: 10%;
+	text-align: center;
+}
+
+.stats-table td {
+	padding: 3px 0px;
+}
+
+.specs-table td {
+	padding: 5px 0px;
+}
+
+.specs-table td:nth-child(1) {
+	width: 58%;
+}
+
+.sub-title {
+	font-weight: bold;
+	font-size: 1.03em;
+}
+
+h4 {
+	margin-bottom: -5px;
+}
+
+.entry-name {
+	margin-top: -4px;
+}
+
+.info {
+	width: 390px;
+	align-self: center;
+}
+
+.entry-number {
+	font-size: .7em;
+	font-weight: normal;
+}
+
+
+@media (max-width: 730px) {
+	#entry-bg {	
+		width: 90%;
+	}	
+		
+	#dex-entry {	
+		height: 80vh;
+		background-size: 100% 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		font-size: .85rem;
+		text-align: center;
+	}	
+		
+	.picture-day {	
+		width: 150px;
+	}	
+		
+	.entry-types li {	
+		margin-right: 5px;
+		margin-left: 5px;
+	}	
+		
+	.abilities li {	
+		width: 90%;
+		margin: auto 10px;
+	}	
+		
+	.stats-table td {	
+		text-align: left;
+	}	
+		
+	.info {	
+		width: 100%;
+	}
+	
+	.stats-table, .specs-table {
+		width: 90%;
+		margin: auto;
+	}
+	
+	#poke-cry {
+		top: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	#about {
+		width: 90%;
+		font-size: .9rem;
+		line-height: 1.2rem;
+	}
+}
+
+
+@keyframes key1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(100%);
+	}
+}
+
+@keyframes key2 {
+	0% {
+		transform: translateY(-1000px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

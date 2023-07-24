@@ -1,0 +1,210 @@
+/*Normal*/
+.main-Normal {
+	background-color: #919AA2;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #919AA2 0, #919AA2 50%);
+	border: 5px #70777C solid;
+}
+
+/*Fire*/
+.main-Fire {
+	background-color: #FF9D55;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #FF9D55 0, #FF9D55 50%);
+	border: 5px #C66626 solid;
+}
+
+/*Fighting*/
+.main-Fighting {
+	background-color: #CE416B;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #CE416B 0, #CE416B 50%);
+	border: 5px #9E1E49 solid;
+}
+
+/*Water*/
+.main-Water {
+	background-color: #5090D6;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #5090D6 0, #5090D6 50%);
+	border: 5px #246EB2 solid;
+}
+
+/*Flying*/
+.main-Flying {
+	background-color: #8FA9DE;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #8FA9DE 0, #8FA9DE 50%);
+	border: 5px #5A7FBF solid;
+}
+
+/*Grass*/
+.main-Grass {
+	background-color: #63BC5A;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #63BC5A 0, #63BC5A 50%);
+	border: 5px #46A03D solid;
+}
+
+/*Poison*/
+.main-Poison {
+	background-color: #AA6BC8;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #AA6BC8 0, #AA6BC8 50%);
+	border: 5px #7C419E solid;
+}
+
+/*Electric*/
+.main-Electric {
+	background-color: #F4D23C;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #F4D23C 0, #F4D23C 50%);
+	border: 5px #CCAD29 solid;
+}
+
+/*Ground*/
+.main-Ground {
+	background-color: #D97845;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #D97845 0, #D97845 50%);
+	border: 5px #AA5D3C solid;
+}
+
+/*Psychic*/
+.main-Psychic {
+	background-color: #FA7179;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #FA7179 0, #FA7179 50%);
+	border: 5px #D64D5B solid;
+}
+
+/*Rock*/
+.main-Rock {
+	background-color: #C5B78C;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #C5B78C 0, #C5B78C 50%);
+	border: 5px #A8945A solid;
+}
+
+/*Ice*/
+.main-Ice {
+	background-color: #73CEC0;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #73CEC0 0, #73CEC0 50%);
+	border: 5px #44A08E solid;
+}
+
+/*Bug*/
+.main-Bug {
+	background-color: #91C12F;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #91C12F 0, #91C12F 50%);
+	border: 5px #76991F solid;
+}
+
+/*Dragon*/
+.main-Dragon {
+	background-color: #0B6DC3;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #0B6DC3 0, #0B6DC3 50%);
+	border: 5px #055DA0 solid;
+}
+
+/*Ghost*/
+.main-Ghost {
+	background-color: #5269AD;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #5269AD 0, #5269AD 50%);
+	border: 5px #334E91 solid;
+}
+
+/*Dark*/
+.main-Dark {
+	background-color: #5A5465;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #5A5465 0, #5A5465 50%);
+	color: #ffffff;
+	border: 5px #3D3749 solid;
+}
+
+/*Steel*/
+.main-Steel {
+	background-color: #5A8EA2;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #5A8EA2 0, #5A8EA2 50%);
+	border: 5px #376A7A solid;
+}
+
+/*Fairy*/
+.main-Fairy {
+	background-color: #EC8FE6;
+	background-size: 23px 23px;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, #EC8FE6 0, #EC8FE6 50%);
+	border: 5px #C969C7 solid;
+}
+
+.type-Normal { background-color: #919AA2; border: .1rem solid #70777C; }
+.type-Fire { background-color: #FF9D55; border: .1rem solid #C66626; }
+.type-Fighting { background-color: #CE416B; border: .1rem solid #9E1E49; }
+.type-Water { background-color: #5090D6; border: .1rem solid #246EB2; }
+.type-Flying { background-color: #8FA9DE; border: .1rem solid #5A7FBF; }
+.type-Grass { background-color: #63BC5A; border: .1rem solid #46A03D; }
+.type-Poison { background-color: #AA6BC8; border: .1rem solid #7C419E; }
+.type-Electric { background-color: #F4D23C; border: .1rem solid #CCAD29; color: #715D05; }
+.type-Ground { background-color: #D97845; border: .1rem solid #AA5D3C; }
+.type-Psychic { background-color: #FA7179; border: .1rem solid #D64D5B; }
+.type-Rock { background-color: #C5B78C; border: .1rem solid #A8945A; }
+.type-Ice { background-color: #73CEC0; border: .1rem solid #44A08E; }
+.type-Bug { background-color: #91C12F; border: .1rem solid #76991F; }
+.type-Dragon { background-color: #0B6DC3; border: .1rem solid #055DA0; }
+.type-Ghost { background-color: #5269AD; border: .1rem solid #334E91; }
+.type-Dark { background-color: #5A5465; border: .1rem solid #3D3749; }
+.type-Steel { background-color: #5A8EA2; border: .1rem solid #376A7A; }
+.type-Fairy { background-color: #EC8FE6; border: .1rem solid #C969C7; }
+
+
+.type-onDex {
+	color: #ffffff;
+	font-size: .9rem;
+	padding: 0.2rem 0.4rem;
+	margin: 0 2px;
+	border-radius: 0.25rem;
+}
+
+.entry-Normal { background-color: #919AA2; background: linear-gradient(0deg, #A8A878 0%, #A8A878 100%) no-repeat; }
+.entry-Fire { background-color: #FF9D55; background: linear-gradient(0deg, #F08030 0%, #F08030 100%) no-repeat; }
+.entry-Fighting { background-color: #CE416B; background: linear-gradient(0deg, #C03028 0%, #C03028 100%) no-repeat; }
+.entry-Water { background-color: #5090D6; background: linear-gradient(0deg, #6890F0 0%, #6890F0 100%) no-repeat; }
+.entry-Flying { background-color: #8FA9DE; background: linear-gradient(0deg, #A890F0 0%, #A890F0 100%) no-repeat; }
+.entry-Grass { background: #0d968d; background: linear-gradient(0deg, #78C850 0%, #78C850 100%) no-repeat; }
+.entry-Poison { background-color: #AA6BC8; background: linear-gradient(0deg, #A040A0 0%, #A040A0 100%) no-repeat; }
+.entry-Electric { background-color: #F4D23C; background: linear-gradient(0deg, #F8D030 0%, #F8D030 100%) no-repeat; }
+.entry-Ground { background-color: #D97845; background: linear-gradient(0deg, #E0C068 0%, #E0C068 100%) no-repeat; }
+.entry-Psychic { background-color: #FA7179; background: linear-gradient(0deg, #F85888 0%, #F85888 100%) no-repeat; }
+.entry-Rock { background-color: #C5B78C; background: linear-gradient(0deg, #B8A038 0%, #B8A038 100%) no-repeat; }
+.entry-Ice { background-color: #73CEC0; background: linear-gradient(0deg, #98D8D8 0%, #98D8D8 100%) no-repeat; }
+.entry-Bug { background-color: #91C12F; background: linear-gradient(0deg, #A8B820 0%, #A8B820 100%) no-repeat; }
+.entry-Dragon { background-color: #0B6DC3; background: linear-gradient(0deg, #7038F8 0%, #7038F8 100%) no-repeat; }
+.entry-Ghost { background-color: #5269AD; background: linear-gradient(0deg, #705898 0%, #705898 100%) no-repeat; }
+.entry-Dark { background-color: #5A5465; background: linear-gradient(0deg, #705848 0%, #705848 100%) no-repeat; }
+.entry-Steel { background-color: #5A8EA2; background: linear-gradient(0deg, #B8B8D0 0%, #B8B8D0 100%) no-repeat; }
+.entry-Fairy { background-color: #EC8FE6; background: linear-gradient(0deg, #EE99AC 0%, #EE99AC 100%) no-repeat; }
+
+#option-Normal { background-color: #919AA2; }
+#option-Fire { background-color: #FF9D55; }
+#option-Fighting { background-color: #CE416B; }
+#option-Water { background-color: #5090D6; }
+#option-Flying { background-color: #8FA9DE; }
+#option-Grass { background-color: #63BC5A; }
+#option-Poison { background-color: #AA6BC8; }
+#option-Electric { background-color: #F4D23C; }
+#option-Ground { background-color: #D97845; }
+#option-Psychic { background-color: #FA7179; }
+#option-Rock { background-color: #C5B78C; }
+#option-Ice { background-color: #73CEC0; }
+#option-Bug { background-color: #91C12F; }
+#option-Dragon { background-color: #0B6DC3; }
+#option-Ghost { background-color: #5269AD; }
+#option-Dark { background-color: #5A5465; }
+#option-Steel { background-color: #5A8EA2; }
+#option-Fairy { background-color: #EC8FE6; }

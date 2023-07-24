@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pokédex | Gen VI</title>
+        <meta name="description" content="A personal Pokémon Encyclopedia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" type="image/x-icon" href="files/icon.svg">
+		
+		<link rel="stylesheet" href="resources/styles.css">
+		<link rel="stylesheet" href="resources/borders.css">
+		<link rel="stylesheet" href="resources/modal.css">
+	</head>
+	<body>
+		<img id="open-about" src="files/unown-qm.gif" onclick="openAbout()" />
+		<div id="main-page">
+			<div id="div-title">
+				<img class="logo-title" src="files/title.png" />
+				<img class="logo-title-m" src="files/title-m.png" width="315px" />
+				<section><form action="javascript:searchPoke()">
+					<input type="text" id="search-bar" placeholder="Search for a Pokémon!">
+					<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+				<button id="reset-search" onclick="resetFilters()"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filters</button></section>
+				<div id="filter-list"><select id="filter-all" onChange="filterType(this.value)"><option value="None">Pick a Type</option></select></div>
+			</div>
+			<div id="div-list"><ol id="pkmn-list"></ol></div>
+		</div>
+		<div id="modal-bg">
+			<div id="modal-close" onclick="closeModal()"></div>
+				<div id="entry-bg"></div>
+			</div>
+			<div id="about">
+				<button id="close-btn2" onclick="closeModal()"></button>
+				<h1>About</h1>
+				<p><span class="txt-bold">What is this?</span> This is a project that I created to showcase my skills in API consumption for educational purposes. I know that there are plenty of Pokédexes around, but Pokémon is something I can talk about for hours, so, why not one more?</p>
+				<p><span class="txt-bold">Why is this Pokédex only showing Generation VI Pokémon?</span> Well, besides the fact that I really like the designs and other personal reasons, Gen VI Dex is the smallest one (with only 72 new mons) and thus it would require less API calls to fill this page.</p>
+				<p><span class="txt-bold">Will you put more generations?</span> Not really. It's not this project goal to become a full Pokédex, so it would be meaningless to include more. Besides, we have websites like <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank">Bulbapedia</a> and <a href="https://www.serebii.net" target="_blank">Serebii</a> with plenty of info.</p>
+				<p><span class="txt-bold">Are you pretending to be asked questions just to explain this project?</span> ... No, what do you mean?</p>
+				<p><span class="txt-bold">Ok, then. Who are you?</span> My name is João, I'm a Dev and you can find more about me in my portfolio <a href="https://joaolisb.github.io/portfolio/" target="_blank">over here</a>.</p>
+				<p class="txt-small">The Pokédex from the main logo was based on the one from <a href="https://icon-library.com/icon/pokedex-icon-28.html" target="_blank">Free ICONS Library</a>, while the background was based on the background used by <a href="https://pokedextracker.com" target="_blank">Pokédex Tracker</a> website.<br><br>Pokémon and All Respective Names are Trademark & © of Nintendo/Creatures Inc./GAME FREAK inc. 1995-<script>document.write(new Date().getFullYear())</script></p>
+			</div>
+		</div>
+		
+		<script src="resources/main.js" async defer></script>
+	</body>
+</html>
