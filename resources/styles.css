@@ -190,6 +190,13 @@ body {
 	transform: scale(90%);
 }
 
+#error-empty {
+	margin: 100px auto;
+	display: none;
+	filter: opacity(90%);
+	width: 300px;
+}
+
 @media (max-width: 1100px) {
 	#pkmn-list {
 		width: 900px;
@@ -251,6 +258,10 @@ body {
 	.poke-number {
 		align-self: center;
 		padding: 0 0 0 10px;
+	}
+	
+	#error-empty {
+		width: 80%;
 	}
 }
 

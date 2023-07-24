@@ -77,6 +77,7 @@ function openEntry(id, name, types, artwork, height, weight, abilities, stats) {
 	const arrTypes = types.split(',');
 	const arrAbilities = abilities.split(',');
 	const arrStats = stats.split(',');
+	document.body.style.overflow = "hidden";
 	
 	let newHTMLone = `<div id="dex-entry" class="entry-${arrTypes[0]}">
 						<button id="close-btn" onclick="closeModal()"></button>
@@ -150,11 +151,13 @@ function closeModal() {
 	modalbg.style.display = "none";
 	entrybg.style.display = "none";
 	about.style.display = "none";
+	document.body.style.overflow = "visible";
 }
 
 function openAbout() {	
 	modalbg.style.display = "flex";
 	about.style.display = "block";
+	document.body.style.overflow = "hidden";
 }
 
 function playCry(name) {
@@ -177,17 +180,20 @@ function playCry(name) {
 let activeType = "None";
 let items = document.getElementsByClassName("pkmn-item");
 let fbtn = document.getElementsByClassName("type-filter");
+let error404 = document.getElementById("error-empty");
 
 function filterType(type) {	
 	if(activeType == type || type == "None") {
 		for(let i = 0; i < items.length; i++) {
 			items[i].style.display = "flex";
+			error404.style.display = "none";
 		}
 		activeType = "None"
 	} else {
 		for(let i = 0; i < items.length;i++) {
 			if(items[i].getAttribute("data-types").includes(type)) {
 				items[i].style.display = "flex";
+				error404.style.display = "none";
 			} else {
 				items[i].style.display = "none";
 			}
@@ -209,8 +215,9 @@ function filterType(type) {
 
 function searchPoke() {
 	let target = document.getElementById("search-bar").value.toLowerCase();
+	let counter = 0;
 	
-		if(target == "") {
+	if(target == "") {
 		for(let i = 0; i < items.length; i++) {
 			items[i].style.display = "flex";
 		}
@@ -220,8 +227,15 @@ function searchPoke() {
 				items[i].style.display = "flex";
 			} else {
 				items[i].style.display = "none";
+				counter++;
 			}
 		}
+	}
+	
+	if(counter >= 72) {
+		error404.style.display = "block";
+	} else {
+		error404.style.display = "none";
 	}
 	
 	for(let i = 0; i < fbtn.length; i++) {
@@ -238,6 +252,7 @@ function resetFilters() {
 		fbtn[i].style.outline = "none"
 	}
 	
+	error404.style.display = "none";
 	document.getElementById("search-bar").value = "";
 	document.getElementById("filter-all").value = "None";
 }

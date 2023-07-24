@@ -1,6 +1,6 @@
 #modal-bg {
-	width: 100vw;
-	height: 100vh;
+	min-width: 100vw;
+	min-height: 100%;
 	background-color: rgba(77, 77, 77, 0.5);
 	align-items: center;
 	justify-content: center;
@@ -50,7 +50,7 @@
 
 #about {
 	background-color: #f0f0f0;
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	padding: 20px 40px 30px 40px;
 	width: 500px;
@@ -219,10 +219,12 @@ h4 {
 @media (max-width: 730px) {
 	#entry-bg {	
 		width: 90%;
+		min-height: 90%;
+		padding-bottom: 20px;
 	}	
 		
 	#dex-entry {	
-		height: 80vh;
+		height: 100%;
 		background-size: 100% 25%;
 		display: flex;
 		flex-direction: column;
@@ -230,6 +232,7 @@ h4 {
 		gap: 30px;
 		font-size: .85rem;
 		text-align: center;
+		padding-top: 20px;
 	}	
 		
 	.picture-day {	
@@ -262,14 +265,20 @@ h4 {
 	#poke-cry {
 		top: 20px;
 	}
+	
+	#about h1 {
+		font-size: 1.2rem;
+		margin-bottom: -10px;
+	}
 }
 
 @media (max-width: 550px) {
 	#about {
 		width: 90%;
-		font-size: .9rem;
+		font-size: .8rem;
 		line-height: 1.2rem;
-	}
+		min-height: 90%;
+	}	
 }
 
 

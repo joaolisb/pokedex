@@ -27,7 +27,9 @@
 				<button id="reset-search" onclick="resetFilters()"><i class="fa fa-refresh" aria-hidden="true"></i> Reset filters</button></section>
 				<div id="filter-list"><select id="filter-all" onChange="filterType(this.value)"><option value="None">Pick a Type</option></select></div>
 			</div>
-			<div id="div-list"><ol id="pkmn-list"></ol></div>
+			<div id="div-list">
+			<img id="error-empty" src="files/error404.png"/>
+			<ol id="pkmn-list"></ol></div>
 		</div>
 		<div id="modal-bg">
 			<div id="modal-close" onclick="closeModal()"></div>
@@ -36,8 +38,8 @@
 			<div id="about">
 				<button id="close-btn2" onclick="closeModal()"></button>
 				<h1>About</h1>
-				<p><span class="txt-bold">What is this?</span> This is a project that I created to showcase my skills in API consumption for educational purposes. I know that there are plenty of Pokédexes around, but Pokémon is something I can talk about for hours, so, why not one more?</p>
-				<p><span class="txt-bold">Why is this Pokédex only showing Generation VI Pokémon?</span> Well, besides the fact that I really like the designs and other personal reasons, Gen VI Dex is the smallest one (with only 72 new mons) and thus it would require less API calls to fill this page.</p>
+				<p><span class="txt-bold">What is this?</span> This is a project that I created to showcase my skills in API consumption for educational purposes.</p>
+				<p><span class="txt-bold">Why is this Pokédex only showing Generation VI Pokémon?</span> Besides the fact that I really like the designs, Gen VI Dex is the smallest one (with only 72 new mons) and thus it would require less API calls to fill the page.</p>
 				<p><span class="txt-bold">Will you put more generations?</span> Not really. It's not this project goal to become a full Pokédex, so it would be meaningless to include more. Besides, we have websites like <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank">Bulbapedia</a> and <a href="https://www.serebii.net" target="_blank">Serebii</a> with plenty of info.</p>
 				<p><span class="txt-bold">Are you pretending to be asked questions just to explain this project?</span> ... No, what do you mean?</p>
 				<p><span class="txt-bold">Ok, then. Who are you?</span> My name is João, I'm a Dev and you can find more about me in my portfolio <a href="https://joaolisb.github.io/portfolio/" target="_blank">over here</a>.</p>
